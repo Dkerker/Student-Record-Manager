@@ -1,0 +1,16 @@
+# Visual Studio build files
+*.obj
+*.exe
+*.pdb
+*.user
+*.suo
+*.vcxproj.user
+*.ipch
+*.vs/
+Debug/
+Release/
+x64/
+*.log
+
+# Runtime files
+Students.txt
