@@ -1,4 +1,7 @@
 # Visual Studio build files
+*.sln
+*.vcxproj
+*.vcxproj.filters
 *.obj
 *.exe
 *.pdb
