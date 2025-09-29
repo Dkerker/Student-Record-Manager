@@ -5,7 +5,7 @@
 #include "Utils.h"
 
 using namespace std;
-
+// Clear the console 
 void clear_screen() {
 #ifdef _WIN32
 	system("cls");
@@ -13,7 +13,7 @@ void clear_screen() {
 	system("clear");
 #endif
 }
-
+// Pause the loop for readability
 void pause_screen() {
 	cout << "\nPress Enter To Return To The Menu...";
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -42,6 +42,7 @@ int main() {
 			cout << "Enter Choice: ";
 			if (cin >> choice) break;
 			cin.clear();
+			// Skip everything in input buffer until newline or EOF
 			cin.ignore(numeric_limits<streamsize>::max(), '\n');
 			cout << "Invalid Input, Please Enter A Number 1-6: ";
 
